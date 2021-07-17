@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class DashBoard extends Base {
     @FindBy(xpath = "//*[@id=\"global-nav\"]/div/nav/ul/li[3]")
-    WebElement photo;
+    WebElement jobs;
 
     @FindBy(xpath = "//*[@id=\"careers\"]/div[3]/div/div/div/div/div/div[1]/nav/div[1]/ul/li[6]")
     WebElement resumeBuilder;
@@ -17,12 +17,11 @@ public class DashBoard extends Base {
     @FindBy(xpath = "//label[@class = 'artdeco-button m0 resume-builder-resume-list-modal__upload-label']")
     WebElement uploadFile;
 
-    public DashBoard (WebDriver driver) {
-        PageFactory.initElements(driver,this);
+    public DashBoard(WebDriver driver) {
+        PageFactory.initElements(driver, this);
     }
-
-    public void setPhoto() throws InterruptedException, IOException {
-        photo.click();
+    public void setUploadFile() throws InterruptedException, IOException {
+        jobs.click();
         Thread.sleep(5000);
         resumeBuilder.click();
         Thread.sleep(5000);
@@ -31,7 +30,6 @@ public class DashBoard extends Base {
         Runtime.getRuntime().exec("C:\\Users\\gopir\\OneDrive\\Desktop\\FileUploadScript.exe");
         Thread.sleep(5000);
     }
-
 }
 
 

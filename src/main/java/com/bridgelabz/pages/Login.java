@@ -3,7 +3,6 @@ package com.bridgelabz.pages;
 import com.bridgelabz.base.Base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -34,7 +33,5 @@ public class Login extends Base {
         userName.sendKeys("gopirajsathwika1999@gmail.com");
         password.sendKeys("sathWIKA@20");
         loginButton.click();
-//        Runtime.getRuntime().exec("C:\\Users\\gopir\\OneDrive\\Desktop\\FileUploadScript.au3");
     }
-
 }
