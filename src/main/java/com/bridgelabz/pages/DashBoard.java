@@ -27,6 +27,7 @@ public class DashBoard extends Base {
         Thread.sleep(5000);
         uploadFile.click();
         Thread.sleep(5000);
+        //To execute the AutoIT script to upload a file
         Runtime.getRuntime().exec("C:\\Users\\gopir\\OneDrive\\Desktop\\FileUploadScript.exe");
         Thread.sleep(5000);
     }
