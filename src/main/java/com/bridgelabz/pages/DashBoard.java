@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import java.io.IOException;
 
 public class DashBoard extends Base {
@@ -18,6 +19,7 @@ public class DashBoard extends Base {
     WebElement uploadFile;
 
     public DashBoard(WebDriver driver) {
+
         PageFactory.initElements(driver, this);
     }
     public void setUploadFile() throws InterruptedException, IOException {

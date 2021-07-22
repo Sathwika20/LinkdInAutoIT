@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
 
+
 public class Base {
     public static WebDriver driver;
     @BeforeTest
@@ -40,5 +41,4 @@ public class Base {
         //used to close the current window
         driver.quit();
     }
-
 }
